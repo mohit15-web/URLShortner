@@ -38,7 +38,7 @@ app.post("/shorten", (req, res) => {
   fs.writeFileSync("urls.json", JSON.stringify(urlsJson));
   res.json({
     success: true,
-    message: `http://localhost:8000/${shortUrl}`,
+    message: `https://urlshortner-txk2.onrender.com/${shortUrl}`,
   });
 });
 
